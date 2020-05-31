@@ -1,0 +1,17 @@
+sudo: required
+language: generic
+services:
+  - docker
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-1"
+  app: "docker-valuestreet"
+  env: "DockerValueStreet-env"
+  bucket_name: "elasticbeanstalk-us-east-1-674449595317"
+  bucket_path: "docker-valuestreet"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: $AWS_SECRET_KEY
