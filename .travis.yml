@@ -7,7 +7,7 @@ deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
   app: "docker-valuestreet"
-  env: "DockerValuestreet-env1"
+  env: "DockerValuestreet-env-1"
   bucket_name: "elasticbeanstalk-us-east-1-674449595317"
   bucket_path: "docker-valuestreet"
   on:
