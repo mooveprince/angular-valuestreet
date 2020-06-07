@@ -3,6 +3,7 @@ WORKDIR '/app'
 COPY ./package.json ./
 RUN npm install
 RUN npm install -g @angular/cli
+RUN ng update --all --force
 COPY . .
 RUN ng build
 
